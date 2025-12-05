@@ -1,0 +1,90 @@
+Protein-Ligand Docking Script by InsilicoLAB
+Overview:
+
+This Python script automates the process of protein-ligand docking using AutoDock Vina and calculates the RMSD (Root Mean Square Deviation) of the docking poses compared to a reference ligand using LS-align. It generates docking results, including binding affinities and RMSD values, and produces a visualization of the docking results.
+
+This script is useful for computational drug design and molecular docking studies, where it helps in predicting the interaction of a ligand with a receptor.
+
+Prerequisites:
+
+Before running this script, you need the following software and files:
+
+AutoDock Vina executable (vina_1.2.7_linux_x86_64)
+
+LS-align executable
+
+Open Babel (for converting molecular file formats)
+
+PDB and PDBQT files for the receptor and ligand(s)
+
+Grid parameters file (txt format) for docking setup
+
+Reference ligand file in PDBQT format for RMSD calculation
+
+Requirements:
+
+Python (>=3.x)
+
+Subprocess module: For running external commands such as AutoDock Vina and LS-align.
+
+Matplotlib and NumPy: For plotting the docking results.
+
+Open Babel: For converting receptor and ligand files into the PDBQT format.
+
+Usage:
+
+Upload Required Files:
+
+The following files need to be uploaded for the docking process:
+
+Receptor File (in PDB format)
+
+Ligand File (in PDB format)
+
+Grid Parameters File (txt format containing grid center and size)
+
+Reference Ligand File (in PDBQT format)
+
+Provide Docking Parameters:
+
+When prompted, input the desired docking parameters such as:
+
+Exhaustiveness: Determines the search quality (default: 32).
+
+Scoring Function: Choose between vina, vinardo, or ad4 (default: vina).
+
+Number of Poses: How many poses to generate (default: 20).
+
+Energy Range: The energy window for the docking poses (default: 3.0 kcal/mol).
+
+Grid Spacing: The spacing of the grid in Angstroms (default: 0.375 Å).
+
+RMSD Threshold: A value to filter poses based on RMSD (default: 999, for all poses).
+
+Convert Files to PDBQT Format:
+
+The receptor, ligand, and reference ligand files are converted to PDBQT format using Open Babel.
+
+Run AutoDock Vina:
+
+AutoDock Vina is executed with the provided parameters, and the docking process is carried out.
+
+The script prints real-time output from the Vina docking process.
+
+Calculate RMSD Using LS-align:
+
+For each docking pose, the RMSD is calculated by comparing the ligand pose to the reference ligand using LS-align.
+
+The RMSD values and binding affinities are stored for further analysis.
+
+Results Visualization:
+
+A scatter plot is generated, showing the RMSD (Å) versus the binding affinity (kcal/mol).
+
+The best docking pose is marked on the plot with a red star, and the plot is saved as Vina_Results.png.
+
+Final Output:
+
+The best docking pose (with the lowest RMSD and highest binding affinity) is saved in the final PDBQT format as result_docking_final.pdbqt.
+
+Detailed results are printed, including the best pose's affinity and RMSD.
