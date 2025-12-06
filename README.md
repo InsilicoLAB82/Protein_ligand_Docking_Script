@@ -93,6 +93,7 @@ Detailed results are printed, including the best pose's affinity and RMSD.
 # +++++++++++++++++++++++++++++++++++++
 # **Protein-Ligand Docking Pipeline for Google Colab**
 # +++++++++++++++++++++++++++++++++++++
+<img width="5253" height="3680" alt="docking_results" src="https://github.com/user-attachments/assets/9e3a7e2d-50d1-49d6-9ed1-b11e20f52ac8" />
 # Overview
 This repository contains a comprehensive Jupyter Notebook for automated protein-ligand docking using AutoDock Vina in Google Colab. Designed by InsilicoLAB, this pipeline streamlines molecular docking workflows with minimal setup requirements, making computational drug discovery accessible to researchers, students, and enthusiasts.
 # Features
