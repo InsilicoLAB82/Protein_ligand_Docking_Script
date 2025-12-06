@@ -90,10 +90,9 @@ The best docking pose is marked on the plot with a red star, and the plot is sav
 The best docking pose (with the lowest RMSD and highest binding affinity) is saved in the final PDBQT format as result_docking_final.pdbqt.
 
 Detailed results are printed, including the best pose's affinity and RMSD.
-
-══════════════════════════════════════════════════════════════════════
-    # **Protein-Ligand Docking Pipeline for Google Colab**
-══════════════════════════════════════════════════════════════════════
+# +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# **Protein-Ligand Docking Pipeline for Google Colab**
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # Overview
 This repository contains a comprehensive Jupyter Notebook for automated protein-ligand docking using AutoDock Vina in Google Colab. Designed by InsilicoLAB, this pipeline streamlines molecular docking workflows with minimal setup requirements, making computational drug discovery accessible to researchers, students, and enthusiasts.
 # Features
