@@ -1,7 +1,7 @@
-**Protein-Ligand Docking Script by InsilicoLAB**
+# **Protein-Ligand Docking Script by InsilicoLAB**
 <img width="3000" height="1800" alt="Vina_Results" src="https://github.com/user-attachments/assets/0ff0d030-e85d-4e2c-84e4-4e3a889c0407" />
 
-**Overview:**
+# **Overview:**
 
 This Python script automates the process of protein-ligand docking using AutoDock Vina and calculates the RMSD (Root Mean Square Deviation) of the docking poses compared to a reference ligand using LS-align. It generates docking results, including binding affinities and RMSD values, and produces a visualization of the docking results.
 
@@ -85,7 +85,7 @@ A scatter plot is generated, showing the RMSD (Å) versus the binding affinity (
 
 The best docking pose is marked on the plot with a red star, and the plot is saved as Vina_Results.png.
 
-**Final Output:**
+# **Final Output:**
 
 The best docking pose (with the lowest RMSD and highest binding affinity) is saved in the final PDBQT format as result_docking_final.pdbqt.
 
