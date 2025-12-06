@@ -90,3 +90,60 @@ The best docking pose is marked on the plot with a red star, and the plot is sav
 The best docking pose (with the lowest RMSD and highest binding affinity) is saved in the final PDBQT format as result_docking_final.pdbqt.
 
 Detailed results are printed, including the best pose's affinity and RMSD.
+
+══════════════════════════════════════════════════════════════════════
+    # **Protein-Ligand Docking Pipeline for Google Colab**
+══════════════════════════════════════════════════════════════════════
+# Overview
+This repository contains a comprehensive Jupyter Notebook for automated protein-ligand docking using AutoDock Vina in Google Colab. Designed by InsilicoLAB, this pipeline streamlines molecular docking workflows with minimal setup requirements, making computational drug discovery accessible to researchers, students, and enthusiasts.
+# Features
+Automated File Processing: Handles multiple molecular formats (PDB, PDBQT, MOL2, SDF) with automatic conversion
+Flexible Grid Configuration: Customizable binding site definition via parameter files or manual input
+Multiple Scoring Functions: Supports Vina, Vinardo, and AD4 scoring functions
+RMSD Analysis: Calculates structural similarity against reference ligands
+Interactive Visualization: Generates comprehensive plots and summary statistics
+Colab-Optimized: Runs entirely in Google Colab with automatic dependency installation
+User-Friendly Interface: Step-by-step workflow with interactive parameter configuration
+# Workflow
+# Step 1: Environment Setup
+The notebook automatically installs all required dependencies:
+AutoDock Vina (v1.2.7)
+OpenBabel (for file conversion)
+Python libraries (Pandas, Matplotlib, NumPy, Seaborn, RDKit)
+LS-align (for RMSD calculations)
+
+# Step 2: Input Preparation
+Upload your files through the interactive interface:
+Receptor: Protein structure in PDB format
+Ligand: Small molecule in PDB/MOL2/SDF format
+Grid Parameters: Text file defining the binding site (optional - can be created manually)
+Reference Ligand: For RMSD calculations (optional)
+
+# Step 3: Docking Configuration
+Customize docking parameters:
+Grid Center & Size: Define the search space
+Exhaustiveness: Search thoroughness (8-64)
+Scoring Function: Choose between vina, vinardo, or ad4
+Number of Poses: Output poses to generate
+Energy Range: Maximum energy difference between poses
+
+# Step 4: Run Docking
+Execute the pipeline with one click:
+File format conversion to PDBQT
+AutoDock Vina execution
+Pose extraction and scoring
+RMSD calculation (if reference provided)
+
+# Step 5: Results Visualization
+Automatically generated outputs include:
+Affinity vs RMSD Scatter Plot
+Affinity Distribution Histogram
+Pose Ranking Bar Chart
+Interactive Summary Dashboard
+CSV Export with detailed pose information
+
+# Input File Formats
+Supported Formats:
+Receptor: .pdb, .pdbqt
+Ligand: .pdb, .pdbqt, .mol2, .sdf
+Grid Parameters: .txt with key-value pairs
