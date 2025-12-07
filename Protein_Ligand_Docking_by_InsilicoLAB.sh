@@ -30,9 +30,9 @@ done
 echo "Grid → Center (${grid[center_x]}, ${grid[center_y]}, ${grid[center_z]}) | Size (${grid[size_x]}, ${grid[size_y]}, ${grid[size_z]})"
 
 # -------------------------- DOCKING PARAMETERS --------------------------
-read -rp "Exhaustiveness [8-128] (default 32): " exhaustiveness; exhaustiveness=${exhaustiveness:-32}
+read -rp "Exhaustiveness [8-32] (default 8): " exhaustiveness; exhaustiveness=${exhaustiveness:-8}
 read -rp "Scoring function [vina/vinardo/ad4] (default vina): " scoring; scoring=${scoring:-vina}
-read -rp "Number of poses (default 20): " num_modes; num_modes=${num_modes:-20}
+read -rp "Number of poses (default 10): " num_modes; num_modes=${num_modes:-10}
 read -rp "Energy range (kcal/mol) (default 3.0): " energy_range; energy_range=${energy_range:-3.0}
 read -rp "Grid spacing in Å (default 0.375): " grid_spacing; grid_spacing=${grid_spacing:-0.375}
 read -rp "Show only poses with RMSD < X Å (999 = all): " max_rmsd_show; max_rmsd_show=${max_rmsd_show:-999}
